@@ -1,43 +1,1591 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bqt-iY-nBa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="SOL-5P-9B8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kXP-12-29z" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="xIA-9u-jih"/>
+                        <viewControllerLayoutGuide type="bottom" id="EEU-VJ-uig"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="zuZ-0c-YZT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3p-i6-ZeS">
-                                <rect key="frame" x="67" y="396" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="昭和年代 (1971-1994年)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gew-3s-xTv">
+                                <rect key="frame" x="49" y="72" width="277" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90228232792519691" green="1" blue="0.13224779459753278" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boI-l8-aJZ">
-                                <rect key="frame" x="67" y="100" width="240" height="128"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="昭和-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ta6-kO-UAb">
+                                <rect key="frame" x="0.0" y="152" width="375" height="283"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26032528137641364" green="0.18629749449555377" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nux-nR-1d6">
+                                <rect key="frame" x="16" y="447" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qY-8b-WOf">
+                                <rect key="frame" x="16" y="476" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー V3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzz-Cd-GNJ">
+                                <rect key="frame" x="16" y="507" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー X"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-rQ-bh3">
+                                <rect key="frame" x="16" y="537" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Amazon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0E-pb-paP">
+                                <rect key="frame" x="16" y="569" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Stronger"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-NV-zRA">
+                                <rect key="frame" x="201" y="447" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Sky Rider"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beC-Yk-bpu">
+                                <rect key="frame" x="201" y="507" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー ZX"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv6-Nc-irp">
+                                <rect key="frame" x="201" y="537" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Black"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvK-s3-m9Y">
+                                <rect key="frame" x="201" y="569" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Black RX"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyy-Ce-XHf">
+                                <rect key="frame" x="201" y="475" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Super 1"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.6950973252118644" green="0.0" blue="0.034540095320542204" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rmg-qn-Hkm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UkB-oL-Cy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="501"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="efI-av-Fhr">
+            <objects>
+                <viewController id="eqX-GJ-CYQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GoO-C9-Yir"/>
+                        <viewControllerLayoutGuide type="bottom" id="3MI-5L-ohu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FF3-Mb-OEP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_20130504194018" translatesAutoresizingMaskIntoConstraints="NO" id="JEQ-fL-JnE">
+                                <rect key="frame" x="0.0" y="48" width="375" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCf-s1-iu9">
+                                <rect key="frame" x="65" y="296" width="32" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="平成"/>
+                                <connections>
+                                    <segue destination="pmq-Dd-aoH" kind="show" id="iLX-0u-dSd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyl-wP-JSX">
+                                <rect key="frame" x="268" y="296" width="32" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="昭和"/>
+                                <connections>
+                                    <segue destination="kXP-12-29z" kind="show" id="onr-4C-SO4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="km-kuuga" translatesAutoresizingMaskIntoConstraints="NO" id="Yl5-QA-p1P">
+                                <rect key="frame" x="10" y="369" width="151" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="km-no1a" translatesAutoresizingMaskIntoConstraints="NO" id="Wwt-V9-0bh">
+                                <rect key="frame" x="214" y="369" width="151" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo45year_by_shinrider-d9x593x" translatesAutoresizingMaskIntoConstraints="NO" id="V9u-qv-Ply">
+                                <rect key="frame" x="150" y="522" width="74" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jX0-qJ-IcE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipe-J2-dEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bd7-8p-x1n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="saG-xr-jhK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" badgeValue="HOME" systemItem="more" id="Gcf-1i-tR4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PHg-Qz-YcR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eqX-GJ-CYQ" kind="relationship" relationship="rootViewController" id="hXi-36-IBJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acw-uU-81S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847.20000000000005" y="138.98050974512745"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ik6-oF-R2y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bqt-iY-nBa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zvH-5v-qLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="saG-xr-jhK" kind="relationship" relationship="viewControllers" id="ZpQ-MZ-PJ3"/>
+                        <segue destination="PqC-Yu-4NM" kind="relationship" relationship="viewControllers" id="zcu-yS-lop"/>
+                        <segue destination="3qz-Ck-dsv" kind="relationship" relationship="viewControllers" id="IfW-r8-be7"/>
+                        <segue destination="SQS-rI-YzD" kind="relationship" relationship="viewControllers" id="QNf-c1-RE4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2x-D2-sck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1722" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Vy-2a-fPn">
+            <objects>
+                <viewController id="ayy-ie-hwL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wjw-ou-jaO"/>
+                        <viewControllerLayoutGuide type="bottom" id="poV-PS-pHX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="juR-gE-VDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nm-Pl-AUj">
+                                <rect key="frame" x="71" y="225" width="46" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-2-Blade"/>
+                                <connections>
+                                    <segue destination="BwB-Bz-wd7" kind="show" id="dzp-bS-thI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyO-NE-kEB">
+                                <rect key="frame" x="117" y="225" width="46" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-3-Wizard"/>
+                                <connections>
+                                    <segue destination="bMH-vc-Xuh" kind="show" id="VCX-eU-ais"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDk-rJ-kp3">
+                                <rect key="frame" x="162" y="225" width="46" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-4-Jaim"/>
+                                <connections>
+                                    <segue destination="hhW-KB-5mu" kind="show" id="gbS-fH-2Wy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmA-v4-Um2">
+                                <rect key="frame" x="208" y="225" width="46" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-5-Fourze"/>
+                                <connections>
+                                    <segue destination="QwG-92-REJ" kind="show" id="6RT-Yn-MPm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxU-rw-Axd">
+                                <rect key="frame" x="253" y="225" width="46" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-6-Kiva"/>
+                                <connections>
+                                    <segue destination="jxm-rs-xse" kind="show" id="jkW-Is-tPm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uok-VQ-roT">
+                                <rect key="frame" x="298" y="225" width="52" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-7-Den-O"/>
+                                <connections>
+                                    <segue destination="XjD-RP-Mb7" kind="show" id="EYN-bH-apL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUR-RS-JvK">
+                                <rect key="frame" x="25" y="225" width="46" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="KM-Girl-1-OOO"/>
+                                <connections>
+                                    <segue destination="ufl-We-DXL" kind="show" id="exq-wZ-4lm"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="km-girl-logo" translatesAutoresizingMaskIntoConstraints="NO" id="sYL-n7-HgR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19498376548290253" green="0.38981285691261292" blue="0.63147008419036865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ft5-9m-jv0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8t-5R-wZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="1030"/>
+        </scene>
+        <!--KM Girls-->
+        <scene sceneID="DHp-FI-P60">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PqC-Yu-4NM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="KM Girls" image="Girls-logo-4" id="6td-bl-6MJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pzl-GK-YYv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ayy-ie-hwL" kind="relationship" relationship="rootViewController" id="Jfc-bQ-0kc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXf-Dh-z8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1722" y="1030"/>
+        </scene>
+        <!--劍-->
+        <scene sceneID="bYQ-as-mXa">
+            <objects>
+                <viewController id="BwB-Bz-wd7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dS6-BH-9e7"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4V-ap-waw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G63-rY-ZOk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mf3-a8-TlR">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-2-Blade-a" translatesAutoresizingMaskIntoConstraints="NO" id="UYV-0H-Ln2">
+                                <rect key="frame" x="-37" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：なっちゃん 生日：1990年4月26日 出生：岡山県" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ek-eF-ghx">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-Cb-D4e">
+                                <rect key="frame" x="164" y="82" width="164" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">安田 奈央
+（やすだ なお</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="劍" id="RQM-PH-Uun"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8y-pV-sHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1282" y="1865"/>
+        </scene>
+        <!--Wizard-->
+        <scene sceneID="seM-VX-czU">
+            <objects>
+                <viewController id="bMH-vc-Xuh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RwM-zb-Bis"/>
+                        <viewControllerLayoutGuide type="bottom" id="Trg-VN-a9L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rnq-XE-3Dd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvO-V0-n9V">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-3-Wizard-a" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-Yr-O8P">
+                                <rect key="frame" x="-14" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：ちーちゃん 生日：1994年1月31日 出生：東京都" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRO-U3-1cy">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDk-wO-qYx">
+                                <rect key="frame" x="164" y="82" width="203" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">秋田 知里
+（あきた ちさと）</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wizard" id="Hgk-cb-gPo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDt-Ch-9uQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495.19999999999999" y="1865.217391304348"/>
+        </scene>
+        <!--Fourze-->
+        <scene sceneID="cp3-eU-4Yi">
+            <objects>
+                <viewController id="QwG-92-REJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ra-iQ-ii7"/>
+                        <viewControllerLayoutGuide type="bottom" id="bGc-95-KYg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JbB-Z6-Z04">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlB-fD-s0a">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-5-Fourze-a" translatesAutoresizingMaskIntoConstraints="NO" id="nbx-7f-6yN">
+                                <rect key="frame" x="-33" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：みっちゃん 生日：1992年11月21日 出生：大分県 大分市" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4k-6g-MTu">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vky-4m-BpO">
+                                <rect key="frame" x="164" y="82" width="203" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">遠藤 三貴
+（えんどう みつき）</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fourze" id="zV5-Hh-bq3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQ4-mh-3jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="1865"/>
+        </scene>
+        <!--鎧武-->
+        <scene sceneID="e74-7L-9cl">
+            <objects>
+                <viewController id="hhW-KB-5mu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BRb-A0-D0X"/>
+                        <viewControllerLayoutGuide type="bottom" id="YRn-zB-FYN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CRr-I4-pdS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zes-Tw-IQg">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-4-Jaim-a" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-fz-F1D">
+                                <rect key="frame" x="0.0" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：ジェナ(Jiena) 生日：1994年9月5日 出生：京都府" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxv-0O-voH">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-Tk-K6Y">
+                                <rect key="frame" x="164" y="82" width="203" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">鷲見 友美ジェナ(Jiena)
+（すみ ともみジェナ）</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="鎧武" id="m7X-IQ-i4e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xd-CK-Pmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="1866"/>
+        </scene>
+        <!--KIVA-->
+        <scene sceneID="Qfe-T9-UW7">
+            <objects>
+                <viewController id="jxm-rs-xse" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pwA-6J-PYP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qtt-uS-rMU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cq6-sS-aQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sf-4r-yOM">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-6-Kiva-a" translatesAutoresizingMaskIntoConstraints="NO" id="X4C-c6-9BT">
+                                <rect key="frame" x="-21" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：じゅんちゃん 生日：1990年12月17日 出生：愛知県名古屋市" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz3-Rf-cLJ">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAa-Rd-1S0">
+                                <rect key="frame" x="164" y="82" width="203" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">名倉 かおり
+（なぐら かおり</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KIVA" id="TRt-BK-ffU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjV-3W-tlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866" y="1864"/>
+        </scene>
+        <!--電王-->
+        <scene sceneID="4lj-ZY-sHQ">
+            <objects>
+                <viewController id="XjD-RP-Mb7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BdT-7P-GIV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eig-ey-u5l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nlb-rT-9uX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-4U-Umc">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-7-Den-O-a" translatesAutoresizingMaskIntoConstraints="NO" id="WMN-iU-3ZA">
+                                <rect key="frame" x="-32" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：えりか 生日：1992年2月5日 出生：滋賀県" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx2-w3-1Qr">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5D-Ct-v7Y">
+                                <rect key="frame" x="164" y="82" width="203" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">吉住 絵里加
+（よしずみ えりか）</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="電王" id="ZFB-yP-JO1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jj8-Un-8Nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="1863"/>
+        </scene>
+        <!--OOO-->
+        <scene sceneID="17E-zo-H8T">
+            <objects>
+                <viewController id="ufl-We-DXL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hnX-d1-8Gp"/>
+                        <viewControllerLayoutGuide type="bottom" id="SK4-RO-PcY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Avh-TM-fKl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6t-iO-kbG">
+                                <rect key="frame" x="4" y="242" width="46" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KM-Girl-1-OOO-a" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-GS-ZeF">
+                                <rect key="frame" x="0.0" y="74" width="375" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="愛稱：ひーちゃん 生日：1992年2月27日 出生：神奈川県" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMM-6k-4aP">
+                                <rect key="frame" x="164" y="137" width="195" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2603252814" green="0.18629749449999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxz-0i-eOf">
+                                <rect key="frame" x="164" y="82" width="164" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">井坂 仁美
+（いさか ひとみ）</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OOO" id="NGV-nM-ToO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9C-uw-feK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2050.4000000000001" y="1862.5187406296852"/>
+        </scene>
+        <!--仮面ライダー 空我-->
+        <scene sceneID="f4c-34-VfS">
+            <objects>
+                <viewController id="vfe-h2-A6v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3V-py-6qs"/>
+                        <viewControllerLayoutGuide type="bottom" id="fEQ-lu-6ig"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="6PO-Mb-n5D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kr_battride_war_ii_wallpaper___kuuga__2__by_kamen_riders-d7j96ta" translatesAutoresizingMaskIntoConstraints="NO" id="arh-5m-4lS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kuuga_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="FgS-yY-cLj">
+                                <rect key="frame" x="193" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー 空我" id="zqa-PL-8N8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAb-g0-sef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1599" y="-2152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uFU-Nc-tf6">
+            <objects>
+                <viewController id="Bd9-7V-wHX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d6i-uS-vTt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hdv-vz-6AD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Y6J-uY-FIM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平成年代 (2000-2009年)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtY-wb-oMu">
+                                <rect key="frame" x="49" y="72" width="277" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10thAnniversaryRiders" translatesAutoresizingMaskIntoConstraints="NO" id="5p4-ed-Msd">
+                                <rect key="frame" x="0.0" y="152" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE5-NH-dvP">
+                                <rect key="frame" x="16" y="447" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー 空我"/>
+                                <connections>
+                                    <segue destination="vfe-h2-A6v" kind="show" id="8Hf-tm-ZZB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-TA-xbH">
+                                <rect key="frame" x="16" y="476" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー AgitΩ"/>
+                                <connections>
+                                    <segue destination="9OV-pJ-REv" kind="show" id="H4L-2F-ZZX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLe-EE-fm1">
+                                <rect key="frame" x="16" y="507" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー 龍騎"/>
+                                <connections>
+                                    <segue destination="U0S-Bd-sH3" kind="show" id="Lb3-HD-hlW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsS-1O-QJV">
+                                <rect key="frame" x="16" y="537" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Faiz"/>
+                                <connections>
+                                    <segue destination="WdK-VD-0et" kind="show" id="zaK-5a-WiK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDz-DE-bkY">
+                                <rect key="frame" x="16" y="569" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー 劍"/>
+                                <connections>
+                                    <segue destination="KRh-KM-lMM" kind="show" id="vf9-hD-2Q3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCZ-zA-xXP">
+                                <rect key="frame" x="201" y="447" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー 響鬼"/>
+                                <connections>
+                                    <segue destination="ar5-6W-hFB" kind="show" id="IGc-Nk-ugH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mq-1P-LdE">
+                                <rect key="frame" x="201" y="507" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー 電王"/>
+                                <connections>
+                                    <segue destination="uvP-Za-mDC" kind="show" id="2CE-R7-HPG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-Sn-30n">
+                                <rect key="frame" x="201" y="537" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Kiva"/>
+                                <connections>
+                                    <segue destination="Ied-iv-6w7" kind="show" id="P7j-me-50p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opk-n6-0w2">
+                                <rect key="frame" x="201" y="569" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Decade"/>
+                                <connections>
+                                    <segue destination="iEN-A1-0xh" kind="show" id="hJw-qo-xaV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDa-eh-SRd">
+                                <rect key="frame" x="201" y="475" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Kabuto"/>
+                                <connections>
+                                    <segue destination="yLy-UF-b5a" kind="show" id="hVc-tg-p2I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zX-MQ-wUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2008.8" y="-680.5097451274363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Xu-84-RYr">
+            <objects>
+                <viewController id="HmA-mD-r09" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pK7-S3-QFG"/>
+                        <viewControllerLayoutGuide type="bottom" id="iHp-by-8nz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="TKY-PH-9vB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平成新十年 (2009-2017年)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-1q-nD0">
+                                <rect key="frame" x="49" y="72" width="277" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kr_goh_by_anhsayqua-d98ephx" translatesAutoresizingMaskIntoConstraints="NO" id="7jZ-sg-gQK">
+                                <rect key="frame" x="0.0" y="152" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD9-rs-pN0">
+                                <rect key="frame" x="16" y="447" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー W"/>
+                                <connections>
+                                    <segue destination="uaP-df-O6a" kind="show" id="2rD-Wv-WF2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWb-Fe-c3k">
+                                <rect key="frame" x="16" y="476" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー OOO"/>
+                                <connections>
+                                    <segue destination="vvq-5I-iWe" kind="show" id="Sqp-Ox-i7P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7N-my-IOh">
+                                <rect key="frame" x="16" y="507" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Fourze"/>
+                                <connections>
+                                    <segue destination="suF-YO-2cP" kind="show" id="HbR-ow-jhC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ho1-qG-xuL">
+                                <rect key="frame" x="16" y="537" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Wizard"/>
+                                <connections>
+                                    <segue destination="FLB-0K-DzI" kind="show" id="vE8-yZ-PgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwH-ob-1eE">
+                                <rect key="frame" x="16" y="569" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー 鎧武"/>
+                                <connections>
+                                    <segue destination="JUD-ib-HOs" kind="show" id="Ybc-Tt-6yb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwu-Er-FGe">
+                                <rect key="frame" x="201" y="447" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Drive"/>
+                                <connections>
+                                    <segue destination="QPV-tM-bwf" kind="show" id="0v8-Qy-ooc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGg-m3-1zK">
+                                <rect key="frame" x="201" y="507" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Amazons"/>
+                                <connections>
+                                    <segue destination="KTc-iI-zAV" kind="show" id="5Ud-6K-azR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pu-kl-CEG">
+                                <rect key="frame" x="201" y="537" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー EX-AID"/>
+                                <connections>
+                                    <segue destination="8u3-fh-qwY" kind="show" id="TRx-P0-zCA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFa-0o-trh">
+                                <rect key="frame" x="201" y="569" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Build"/>
+                                <connections>
+                                    <segue destination="DuB-Ip-iIC" kind="show" id="2KC-mO-4p8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngc-M6-Sdg">
+                                <rect key="frame" x="201" y="475" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="仮面ライダー Ghost"/>
+                                <connections>
+                                    <segue destination="FOD-hh-bNA" kind="show" id="F25-h2-q7B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBO-2e-Aba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3706" y="-681"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c4g-eO-ZYj">
+            <objects>
+                <viewController id="pmq-Dd-aoH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DlT-Cz-boV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vbe-kN-riW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y3W-xb-yCd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2000-2009)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oF-Es-Pn0">
+                                <rect key="frame" x="16" y="72" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2009-2017)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ9-95-AfZ">
+                                <rect key="frame" x="16" y="338" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2S-5v-g4V">
+                                <rect key="frame" x="146" y="333" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="平成新十年"/>
+                                <connections>
+                                    <segue destination="HmA-mD-r09" kind="show" id="mfk-5v-8kI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvX-ge-1Mb">
+                                <rect key="frame" x="146" y="67" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="平成年代"/>
+                                <connections>
+                                    <segue destination="Bd9-7V-wHX" kind="show" id="mOD-jo-Ubs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nou-4v-xtV">
+                                <rect key="frame" x="0.0" y="360" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="2649340-7160821778-kamen"/>
+                                <connections>
+                                    <segue destination="HmA-mD-r09" kind="show" id="xue-Q0-2eg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jar-YY-bpe">
+                                <rect key="frame" x="0.0" y="94" width="375" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="2288"/>
+                                <connections>
+                                    <segue destination="Bd9-7V-wHX" kind="show" id="Yao-oa-fpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ja0-0R-Xka"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dt0-7s-Lqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="28"/>
+        </scene>
+        <!--仮面ライダー AgitΩ-->
+        <scene sceneID="gc7-Fl-gXg">
+            <objects>
+                <viewController id="9OV-pJ-REv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dFz-J1-ZwP"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUf-pe-wgr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="DlH-Pb-asS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kr_battride_war_ii_wallpaper___agito__1__by_kamen_riders-d7k8js4" translatesAutoresizingMaskIntoConstraints="NO" id="qcT-mA-w3C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="44735e089e61471bb5e18a0bbcef2bf3" translatesAutoresizingMaskIntoConstraints="NO" id="ebq-Jl-Wdb">
+                                <rect key="frame" x="190" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー AgitΩ" id="kQd-Uv-DRr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARU-Rb-bFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="-2152"/>
+        </scene>
+        <!--仮面ライダー 龍騎-->
+        <scene sceneID="xHz-Ue-vZS">
+            <objects>
+                <viewController id="U0S-Bd-sH3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBR-fe-p0U"/>
+                        <viewControllerLayoutGuide type="bottom" id="AWm-MQ-Beu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="SAB-t6-ot4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kamen_rider_battride_war_ii_wallpaper_pc__kr_ryuki_by_kamen_riders-d7aadrg" translatesAutoresizingMaskIntoConstraints="NO" id="MRx-0c-rMh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6b4f46e143b24cc32dda214ee812066f" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-0J-pO6">
+                                <rect key="frame" x="0.0" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー 龍騎" id="UAj-1H-iSa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Hw-7J-OxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-2152"/>
+        </scene>
+        <!--仮面ライダー Faiz-->
+        <scene sceneID="yDp-EL-f7n">
+            <objects>
+                <viewController id="WdK-VD-0et" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="foQ-bk-rui"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccQ-hl-xg3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="6sc-lX-Vn9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kamen_rider_battride_war_ii_wallpaper_pc__kr_faiz_by_kamen_riders-d7awwzz" translatesAutoresizingMaskIntoConstraints="NO" id="YBW-aH-iVb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="555-logo" translatesAutoresizingMaskIntoConstraints="NO" id="XhK-ha-pT5">
+                                <rect key="frame" x="186" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Faiz" id="SAc-wk-Mu7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSL-W3-tqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="-2152"/>
+        </scene>
+        <!--仮面ライダー 劍-->
+        <scene sceneID="I0v-tw-ix9">
+            <objects>
+                <viewController id="KRh-KM-lMM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t4a-Ay-z4e"/>
+                        <viewControllerLayoutGuide type="bottom" id="sgQ-3R-hFt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="V2T-mD-Jcr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 劍" translatesAutoresizingMaskIntoConstraints="NO" id="kG3-1a-HIX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 劍-logo拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="Yxc-uL-Pm0">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー 劍" id="BCe-Qc-gRY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOq-UB-0Vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="-2152"/>
+        </scene>
+        <!--仮面ライダー 響鬼-->
+        <scene sceneID="uTx-tZ-oXj">
+            <objects>
+                <viewController id="ar5-6W-hFB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXV-Wg-3L1"/>
+                        <viewControllerLayoutGuide type="bottom" id="rGc-vT-glH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="mQx-ck-LdM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 響鬼" translatesAutoresizingMaskIntoConstraints="NO" id="5GH-c6-IhQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 響鬼-logo" translatesAutoresizingMaskIntoConstraints="NO" id="eTb-Ul-PWN">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー 響鬼" id="ct7-IZ-u2a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtw-v4-Ibc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1598" y="-1418"/>
+        </scene>
+        <!--仮面ライダー Kabuto-->
+        <scene sceneID="e6m-Xq-Ddc">
+            <objects>
+                <viewController id="yLy-UF-b5a" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAO-sp-q33"/>
+                        <viewControllerLayoutGuide type="bottom" id="MYj-DE-Qhw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Fbj-KE-mcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Kabuto" translatesAutoresizingMaskIntoConstraints="NO" id="zhM-Lw-y1I">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kabuto_logo" translatesAutoresizingMaskIntoConstraints="NO" id="69s-n8-uCC">
+                                <rect key="frame" x="8" y="513" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Kabuto" id="09x-d6-7P2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Krc-7c-fSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="-1418"/>
+        </scene>
+        <!--仮面ライダー 電王-->
+        <scene sceneID="1mL-KS-oUv">
+            <objects>
+                <viewController id="uvP-Za-mDC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tCA-wZ-kkK"/>
+                        <viewControllerLayoutGuide type="bottom" id="xJF-kp-JMx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="hAN-rF-dlw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 電王" translatesAutoresizingMaskIntoConstraints="NO" id="p6k-UC-7Gs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 電王-logo" translatesAutoresizingMaskIntoConstraints="NO" id="0D9-Li-Qlo">
+                                <rect key="frame" x="0.0" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー 電王" id="rvK-Lz-eSd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ic6-A1-XX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="-1418"/>
+        </scene>
+        <!--仮面ライダー Kiva-->
+        <scene sceneID="aYa-PB-YgU">
+            <objects>
+                <viewController id="Ied-iv-6w7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Aj-EC-lBN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ce9-op-ckG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="UbX-XV-l3V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Kiva" translatesAutoresizingMaskIntoConstraints="NO" id="BTm-t6-iqm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Kiva-logo" translatesAutoresizingMaskIntoConstraints="NO" id="n50-rB-uVP">
+                                <rect key="frame" x="0.0" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Kiva" id="3ki-13-F92"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6UW-YG-hRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="-1418"/>
+        </scene>
+        <!--仮面ライダー Decade-->
+        <scene sceneID="97O-WS-X8C">
+            <objects>
+                <viewController id="iEN-A1-0xh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CMt-SN-qt8"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIT-Hf-9V6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Yc9-zM-GzH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Decade" translatesAutoresizingMaskIntoConstraints="NO" id="rsC-DW-9u4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Decade-logo" translatesAutoresizingMaskIntoConstraints="NO" id="D0l-vC-SOi">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Decade" id="N0D-us-rVL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRv-VJ-41h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="-1418"/>
+        </scene>
+        <!--仮面ライダー Drive-->
+        <scene sceneID="C3z-Sf-eyD">
+            <objects>
+                <viewController id="QPV-tM-bwf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wpl-qX-tWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ic-FC-kdj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Jto-Dh-4Ag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Drive" translatesAutoresizingMaskIntoConstraints="NO" id="nLY-Gw-aYL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Drive logo" translatesAutoresizingMaskIntoConstraints="NO" id="yGu-cC-jJq">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Drive" id="pDl-Hd-HC8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ic-qk-uqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3705" y="-1418"/>
+        </scene>
+        <!--仮面ライダー W-->
+        <scene sceneID="2qn-s6-cPx">
+            <objects>
+                <viewController id="uaP-df-O6a" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E2c-5D-htm"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfr-j2-WLw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="P3w-vM-Ro6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー W" translatesAutoresizingMaskIntoConstraints="NO" id="JuC-1F-CSW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="W-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qvl-Vj-2cg">
+                                <rect key="frame" x="8" y="513" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー W" id="xHL-5i-A3i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rV-AV-XIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3705" y="-2152"/>
+        </scene>
+        <!--仮面ライダー OOO-->
+        <scene sceneID="sbJ-ge-FqC">
+            <objects>
+                <viewController id="vvq-5I-iWe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1da-HO-Ny2"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGm-Ah-DAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="zQJ-4Q-YLx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー OOO" translatesAutoresizingMaskIntoConstraints="NO" id="49s-et-Hv0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー OOO Logo" translatesAutoresizingMaskIntoConstraints="NO" id="J6K-2e-Z5i">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー OOO" id="LuC-Sn-vfk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJm-KO-13g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4625" y="-2152"/>
+        </scene>
+        <!--仮面ライダー Fourze-->
+        <scene sceneID="2ZA-48-YuD">
+            <objects>
+                <viewController id="suF-YO-2cP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vij-Vg-pgs"/>
+                        <viewControllerLayoutGuide type="bottom" id="JxY-2M-IZW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="UMb-0P-uqE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Fourze" translatesAutoresizingMaskIntoConstraints="NO" id="jVG-YG-XG5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Fourze logo" translatesAutoresizingMaskIntoConstraints="NO" id="tH8-Uf-UWX">
+                                <rect key="frame" x="0.0" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Fourze" id="48K-Il-H1O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXE-5a-A2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5526" y="-2152"/>
+        </scene>
+        <!--仮面ライダー Wizard-->
+        <scene sceneID="ity-5Y-fUg">
+            <objects>
+                <viewController id="FLB-0K-DzI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hoF-3Q-PoP"/>
+                        <viewControllerLayoutGuide type="bottom" id="GNR-Gh-HrO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="H0T-xc-s6c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Wizard" translatesAutoresizingMaskIntoConstraints="NO" id="dqa-Yr-Qjn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Wizard logo" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-UG-vko">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Wizard" id="uP1-2s-zb9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVB-IF-woz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6414" y="-2152"/>
+        </scene>
+        <!--仮面ライダー 鎧武-->
+        <scene sceneID="uH9-U4-WBv">
+            <objects>
+                <viewController id="JUD-ib-HOs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2cR-zJ-BGE"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFU-r3-Fbt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="nQt-3R-b6m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 鎧武" translatesAutoresizingMaskIntoConstraints="NO" id="lwe-08-f0p">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー 鎧武 logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-U2-Cza">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー 鎧武" id="P3B-hw-htk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33N-FJ-VeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7222" y="-2152"/>
+        </scene>
+        <!--仮面ライダー Build-->
+        <scene sceneID="ZaO-Er-DhV">
+            <objects>
+                <viewController id="DuB-Ip-iIC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qTU-Di-KBX"/>
+                        <viewControllerLayoutGuide type="bottom" id="1rM-YD-KVp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="BVU-c3-twK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Build" translatesAutoresizingMaskIntoConstraints="NO" id="wty-0t-EXh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Build" id="YEo-M4-EWd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ct-Hm-6su" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7222" y="-1418"/>
+        </scene>
+        <!--仮面ライダー EX-AID-->
+        <scene sceneID="YMn-ZT-9CZ">
+            <objects>
+                <viewController id="8u3-fh-qwY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c4O-oT-5ga"/>
+                        <viewControllerLayoutGuide type="bottom" id="PCN-6I-OsI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="HeD-gB-Ggo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー EX-AID" translatesAutoresizingMaskIntoConstraints="NO" id="8oO-tz-qQW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー EX-AID logo" translatesAutoresizingMaskIntoConstraints="NO" id="4uX-wm-7Ue">
+                                <rect key="frame" x="185" y="516" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー EX-AID" id="I4L-qv-Bd4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Sy-zT-rCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6415" y="-1418"/>
+        </scene>
+        <!--仮面ライダー Amazons-->
+        <scene sceneID="JPo-yz-O5h">
+            <objects>
+                <viewController id="KTc-iI-zAV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Yf-HI-zAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="t9r-J3-bTq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="fD3-sa-tcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Amazons" translatesAutoresizingMaskIntoConstraints="NO" id="Iz5-6k-kzo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Amazons" id="Bps-B0-8mV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9d-5J-3hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5527" y="-1418"/>
+        </scene>
+        <!--仮面ライダー Ghost-->
+        <scene sceneID="p9M-4M-I67">
+            <objects>
+                <viewController id="FOD-hh-bNA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="syg-w6-cfj"/>
+                        <viewControllerLayoutGuide type="bottom" id="fU9-Z9-SGi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="2Lu-6G-SRT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Ghost" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-kf-EXy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仮面ライダー Ghost logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZUF-AQ-4Wf">
+                                <rect key="frame" x="0.0" y="521" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="仮面ライダー Ghost" id="ePJ-tR-tkB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8FB-d0-ULq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4625" y="-1418"/>
+        </scene>
+        <!--昭和-->
+        <scene sceneID="yrt-WJ-Ngb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3qz-Ck-dsv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="昭和" image="Bar-昭和-2" id="ekq-97-D9F"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ccc-1Y-Ksv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kXP-12-29z" kind="relationship" relationship="rootViewController" id="q09-Pp-XhU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ex-og-aYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="901"/>
+        </scene>
+        <!--平成-->
+        <scene sceneID="OBz-g0-bxR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SQS-rI-YzD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="平成" image="Bar-平成十-2" id="RvV-7d-A4s"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yis-5F-TSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pmq-Dd-aoH" kind="relationship" relationship="rootViewController" id="12s-Ye-Rw0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZf-4O-5FX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="-600"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10thAnniversaryRiders" width="622" height="460"/>
+        <image name="2288" width="960" height="430"/>
+        <image name="2649340-7160821778-kamen" width="1920" height="1024"/>
+        <image name="44735e089e61471bb5e18a0bbcef2bf3" width="223" height="116"/>
+        <image name="555-logo" width="385" height="93"/>
+        <image name="6b4f46e143b24cc32dda214ee812066f" width="265" height="116"/>
+        <image name="Bar-平成十-2" width="40" height="40"/>
+        <image name="Bar-昭和-2" width="40" height="40"/>
+        <image name="Girls-logo-4" width="40" height="40"/>
+        <image name="KM-Girl-1-OOO" width="210" height="1299"/>
+        <image name="KM-Girl-1-OOO-a" width="1032" height="774"/>
+        <image name="KM-Girl-2-Blade" width="210" height="1299"/>
+        <image name="KM-Girl-2-Blade-a" width="1280" height="1024"/>
+        <image name="KM-Girl-3-Wizard" width="210" height="1299"/>
+        <image name="KM-Girl-3-Wizard-a" width="1600" height="1200"/>
+        <image name="KM-Girl-4-Jaim" width="210" height="1299"/>
+        <image name="KM-Girl-4-Jaim-a" width="1032" height="774"/>
+        <image name="KM-Girl-5-Fourze" width="210" height="1299"/>
+        <image name="KM-Girl-5-Fourze-a" width="1032" height="774"/>
+        <image name="KM-Girl-6-Kiva" width="210" height="1299"/>
+        <image name="KM-Girl-6-Kiva-a" width="1032" height="774"/>
+        <image name="KM-Girl-7-Den-O" width="210" height="1299"/>
+        <image name="KM-Girl-7-Den-O-a" width="1600" height="1200"/>
+        <image name="Kabuto_logo" width="224" height="107"/>
+        <image name="Kuuga_Logo" width="700" height="436"/>
+        <image name="W-logo" width="516" height="270"/>
+        <image name="kamen_rider_battride_war_ii_wallpaper_pc__kr_faiz_by_kamen_riders-d7awwzz" width="1920" height="1200"/>
+        <image name="kamen_rider_battride_war_ii_wallpaper_pc__kr_ryuki_by_kamen_riders-d7aadrg" width="1600" height="1200"/>
+        <image name="km-girl-logo" width="2261" height="542"/>
+        <image name="km-kuuga" width="503" height="576"/>
+        <image name="km-no1a" width="503" height="576"/>
+        <image name="kr_battride_war_ii_wallpaper___agito__1__by_kamen_riders-d7k8js4" width="1920" height="1200"/>
+        <image name="kr_battride_war_ii_wallpaper___kuuga__2__by_kamen_riders-d7j96ta" width="1600" height="1200"/>
+        <image name="kr_goh_by_anhsayqua-d98ephx" width="1140" height="701"/>
+        <image name="logo45year_by_shinrider-d9x593x" width="255" height="200"/>
+        <image name="logo_20130504194018" width="564" height="175"/>
+        <image name="仮面ライダー Amazons" width="674" height="960"/>
+        <image name="仮面ライダー Build" width="600" height="906"/>
+        <image name="仮面ライダー Decade" width="1032" height="774"/>
+        <image name="仮面ライダー Decade-logo" width="400" height="243"/>
+        <image name="仮面ライダー Drive" width="600" height="600"/>
+        <image name="仮面ライダー Drive logo" width="413" height="155"/>
+        <image name="仮面ライダー EX-AID" width="800" height="800"/>
+        <image name="仮面ライダー EX-AID logo" width="1024" height="378"/>
+        <image name="仮面ライダー Fourze" width="1600" height="1200"/>
+        <image name="仮面ライダー Fourze logo" width="490" height="230"/>
+        <image name="仮面ライダー Ghost" width="436" height="517"/>
+        <image name="仮面ライダー Ghost logo" width="1280" height="362"/>
+        <image name="仮面ライダー Kabuto" width="1920" height="1200"/>
+        <image name="仮面ライダー Kiva" width="1131" height="707"/>
+        <image name="仮面ライダー Kiva-logo" width="312" height="145"/>
+        <image name="仮面ライダー OOO" width="1600" height="1200"/>
+        <image name="仮面ライダー OOO Logo" width="288" height="75"/>
+        <image name="仮面ライダー W" width="1600" height="1200"/>
+        <image name="仮面ライダー Wizard" width="1920" height="1200"/>
+        <image name="仮面ライダー Wizard logo" width="500" height="247"/>
+        <image name="仮面ライダー 劍" width="1600" height="1200"/>
+        <image name="仮面ライダー 劍-logo拷貝" width="500" height="186"/>
+        <image name="仮面ライダー 鎧武" width="1600" height="1200"/>
+        <image name="仮面ライダー 鎧武 logo" width="500" height="260"/>
+        <image name="仮面ライダー 電王" width="1920" height="1200"/>
+        <image name="仮面ライダー 電王-logo" width="1109" height="365"/>
+        <image name="仮面ライダー 響鬼" width="1600" height="1200"/>
+        <image name="仮面ライダー 響鬼-logo" width="206" height="114"/>
+        <image name="平成" width="30" height="64"/>
+        <image name="昭和" width="30" height="64"/>
+        <image name="昭和-1" width="1067" height="739"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="q09-Pp-XhU"/>
+        <segue reference="12s-Ye-Rw0"/>
+        <segue reference="xue-Q0-2eg"/>
+        <segue reference="mOD-jo-Ubs"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.28279919409999998" blue="0.25228780200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
